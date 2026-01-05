@@ -1,0 +1,17 @@
+EDA SUMMARY
+========================
+
+Total Rows: 284807
+Total Columns: 31
+
+Class Distribution:
+Class
+0    284315
+1       492
+Name: count, dtype: int64
+
+Class Distribution (%):
+Class
+0    99.827251
+1     0.172749
+Name: proportion, dtype: float64

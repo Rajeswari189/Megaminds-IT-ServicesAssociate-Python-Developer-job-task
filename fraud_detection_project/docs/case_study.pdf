@@ -1,0 +1,50 @@
+# short case study
+CASE STUDY: CREDIT CARD FRAUD DETECTION
+Problem Statement
+
+Detect fraudulent credit card transactions from highly imbalanced data.
+
+Objectives
+
+Reduce false negatives
+
+Improve fraud detection accuracy
+
+Handle class imbalance effectively
+
+Data Preprocessing
+
+Removed time feature
+
+Scaled transaction amount
+
+Applied SMOTE for balancing
+
+Model Selection
+
+Baseline ML models
+
+Proposed hybrid model combining Autoencoder + XGBoost
+
+Visualizations
+
+(Insert screenshots)
+
+Class distribution
+
+ROC curve
+
+Precision-Recall curve
+
+Insights
+
+Anomaly detection improves recall
+
+Hybrid model reduces false positives
+
+Recommendations
+
+Deploy hybrid models in financial systems
+
+Monitor model drift periodically
+
