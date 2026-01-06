@@ -29,7 +29,13 @@ detection with ensemble learning.
 
 2. LITERATURE REVIEW
 
-(Write 3–4 paragraphs)
+Credit card fraud detection has been extensively studied using traditional machine learning techniques such as Logistic Regression, Support Vector Machines (SVM), Decision Trees, and Random Forests. Logistic Regression remains popular due to its simplicity and interpretability; however, it struggles with non-linear decision boundaries and highly imbalanced datasets. SVMs offer better generalization through margin maximization but are computationally expensive for large-scale transaction data. Random Forests improve performance by aggregating multiple decision trees, yet they often exhibit bias toward the majority class in fraud detection scenarios, leading to missed fraudulent transactions.
+
+In recent years, deep learning approaches have gained attention for fraud detection due to their ability to model complex and non-linear patterns. Artificial Neural Networks (ANNs) and Long Short-Term Memory (LSTM) networks have been applied to sequential transaction data, capturing temporal dependencies effectively. Autoencoders, in particular, have emerged as powerful unsupervised anomaly detection models. By learning compressed representations of normal transactions, autoencoders can identify fraudulent behavior through high reconstruction errors. However, autoencoder-based methods alone are insufficient, as they do not explicitly optimize classification objectives and may generate high false positives when transaction patterns evolve.
+
+To overcome these limitations, hybrid and ensemble-based approaches have been proposed. Feature selection techniques such as Mutual Information, correlation filtering, and wrapper methods have been shown to improve model stability and reduce overfitting in high-dimensional datasets. Ensemble learning methods like XGBoost and Gradient Boosting Machines outperform traditional classifiers by combining multiple weak learners. Despite these advances, existing models often treat feature selection, anomaly detection, and classification as independent processes, failing to exploit their complementary strengths.
+
+The key gaps identified in the literature include inadequate handling of extreme class imbalance, limited integration of anomaly detection scores into supervised classifiers, and high false positive rates that reduce practical usability. This research addresses these gaps by proposing a unified hybrid framework that combines hybrid feature selection, autoencoder-based anomaly scoring, and XGBoost classification to improve recall and robustness in credit card fraud detection.
 
 Traditional ML approaches: Logistic Regression, SVM, Random Forest
 
