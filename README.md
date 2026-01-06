@@ -20,7 +20,7 @@ The goal of this project is to build a **robust and reproducible ML pipeline** t
   - `1` → Fraudulent transaction  
 
  **Note**:  
-Due to file size and licensing restrictions, the dataset (`creditcard.csv`) is **NOT included** in this repository.
+Due to file size and licensing restrictions, the dataset (`creditcard.csv`) is **NOT included** in this repository.zip file has been added unzip and use it
 
 ### Dataset Setup
 1. Download the dataset from Kaggle
@@ -28,8 +28,6 @@ Due to file size and licensing restrictions, the dataset (`creditcard.csv`) is *
 3. Place it inside:
 data/creditcard.csv
 
-yaml
-Copy code
 
 ---
 
@@ -37,7 +35,7 @@ Copy code
 
 fraud_detection_project/
 ├── data/
-│ └── creditcard.csv # (ignored in GitHub)
+│ └── creditcard.csv # (ignored in GitHub due to its size)
 ├── notebooks/
 │ └── eda.ipynb # Exploratory Data Analysis
 ├── outputs/
@@ -52,6 +50,7 @@ fraud_detection_project/
 │ └── train_proposed.py
 ├── main.py # Pipeline entry point
 ├── requirements.txt
+|---.gitignore
 └── README.md
 
 
@@ -126,6 +125,7 @@ outputs/metrics/
 1️⃣ Activate Virtual Environment
 
 ```bash
+python -m venv venv
 source venv/bin/activate
 
 ```
@@ -190,7 +190,7 @@ This project uses the **Credit Card Fraud Detection dataset** from Kaggle.
 Due to file size and licensing restrictions, the dataset is **not included** in this repository.
 
 ### Download Instructions
-1. Visit: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+1. Visit: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud or i have already uploaded a zip file of size 64MB in data folder
 2. Download the ZIP file
 3. Extract `creditcard.csv`
 4. Place it inside:
@@ -212,26 +212,6 @@ fraud_detection_project/
 
 
 ---
-
-## How to Run
-
-1. Put the dataset into data/creditcard.csv (download from Kaggle; small).
-
-2. Create a virtualenv and install:
-
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-``` 
-
-3. Run the project 
-
-``` bash
-python main.py
-
-```
 
 Models Implemented
 
